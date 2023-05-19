@@ -27,6 +27,7 @@ func RestoVariables() {
 	fmt.Println(Fecha)
 }
 
+// func nombreFuncion(argumentos) (retorno)
 func ConviertoaTexto(numero int) (bool, string) {
 	// Itoa: Integer to alphanumeric
 	texto := strconv.Itoa(numero)
