@@ -1,9 +1,12 @@
+// Paquete principal
 package main
 
 import (
-	"fmt"
+	// Paque que implementa funciones I/O
+	"github.com/AngelTravieso/go/variables"
 )
 
+// Punto de entrada del programa
 func main() {
-	fmt.Println("Hola Mundo")
+	variables.MostrarEnteros()
 }
