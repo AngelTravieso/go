@@ -8,5 +8,6 @@ import (
 
 // Punto de entrada del programa
 func main() {
-	variables.MostrarEnteros()
+	// variables.MostrarEnteros()
+	variables.RestoVariables()
 }
