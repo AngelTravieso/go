@@ -8,7 +8,7 @@ import (
 	// Tiene la información del equipo donde se ejecuta el sistema
 	"runtime"
 
-	// Im
+	// Importar paquete 'variables'
 	"github.com/AngelTravieso/go/variables"
 )
 
