@@ -5,6 +5,8 @@ import (
 	"fmt"
 	// Para manejar fechas
 	"time"
+	// Para convertir int a string
+	"strconv"
 )
 
 var Nombre string
@@ -23,4 +25,10 @@ func RestoVariables() {
 	fmt.Println(Estado)
 	fmt.Println(Sueldo)
 	fmt.Println(Fecha)
+}
+
+func ConviertoaTexto(numero int) (bool, string) {
+	// Itoa: Integer to alphanumeric
+	texto := strconv.Itoa(numero)
+	return true, texto
 }
