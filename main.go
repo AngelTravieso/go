@@ -1,14 +1,16 @@
 // Paquete principal
 package main
 
-import ( // Paque que implementa funciones I/O
-	// Tiene la información del equipo donde se ejecuta el sistema
-	// Importar paquete 'variables'
-	// "github.com/AngelTravieso/go/variables"
-	// Importar paquete 'ejercicios'
-	// "github.com/AngelTravieso/go/ejercicios"
-	// Importar paquete 'teclado'
-	"github.com/AngelTravieso/go/teclado"
+// Paque que implementa funciones I/O
+// Tiene la información del equipo donde se ejecuta el sistema
+// Importar paquete 'variables'
+// "github.com/AngelTravieso/go/variables"
+// Importar paquete 'ejercicios'
+// "github.com/AngelTravieso/go/ejercicios"
+// Importar paquete 'teclado'
+
+import (
+	"github.com/AngelTravieso/go/iteraciones"
 )
 
 // Punto de entrada del programa
@@ -46,6 +48,8 @@ func main() {
 
 	// fmt.Printf("%d %s", numero, texto)
 
-	teclado.IngresoNumeros()
+	// teclado.IngresoNumeros()
+
+	iteraciones.Iterar()
 
 }
