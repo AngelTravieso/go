@@ -29,13 +29,8 @@ func MostrarTablaMultiplicar() {
 
 	fmt.Printf("Tabla de Multiplicar del %d \n", numero)
 
-	for i := 1; numero <= 10; i++ {
-
+	for i := 1; i <= 10; i++ {
 		fmt.Printf("%d x %d = %d \n", numero, i, (numero * i))
-
-		if i == 10 {
-			break
-		}
 	}
 
 }
