@@ -1,7 +1,9 @@
 // Paquete principal
 package main
 
-import "github.com/AngelTravieso/go/ejercicios"
+import (
+	"github.com/AngelTravieso/go/files"
+)
 
 // Paque que implementa funciones I/O
 // Tiene la información del equipo donde se ejecuta el sistema
@@ -50,6 +52,8 @@ func main() {
 
 	// iteraciones.Iterar()
 
-	ejercicios.MostrarTablaMultiplicar()
+	// fmt.Println(ejercicios.MostrarTablaMultiplicar())
+
+	files.GrabaTablaMultiplicar()
 
 }
