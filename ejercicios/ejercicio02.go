@@ -7,7 +7,11 @@ import (
 	"strconv"
 )
 
-func MostrarTablaMultiplicar() string {
+// Devuelve la tabla de multiplicar de un número específico
+// Valores de retorno:
+//
+// - string con la tabla de multiplicar
+func TablaMultiplicar() string {
 
 	scanner := bufio.NewScanner(os.Stdin)
 	var numero int

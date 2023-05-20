@@ -54,6 +54,8 @@ func main() {
 
 	// fmt.Println(ejercicios.MostrarTablaMultiplicar())
 
-	files.GrabaTablaMultiplicar()
+	// files.GrabaTablaMultiplicar()
+
+	files.SumaTabla()
 
 }
