@@ -1,6 +1,8 @@
 // Paquete principal
 package main
 
+import "github.com/AngelTravieso/go/ejercicios"
+
 // Paque que implementa funciones I/O
 // Tiene la información del equipo donde se ejecuta el sistema
 // Importar paquete 'variables'
@@ -8,10 +10,6 @@ package main
 // Importar paquete 'ejercicios'
 // "github.com/AngelTravieso/go/ejercicios"
 // Importar paquete 'teclado'
-
-import (
-	"github.com/AngelTravieso/go/iteraciones"
-)
 
 // Punto de entrada del programa
 func main() {
@@ -50,6 +48,8 @@ func main() {
 
 	// teclado.IngresoNumeros()
 
-	iteraciones.Iterar()
+	// iteraciones.Iterar()
+
+	ejercicios.MostrarTablaMultiplicar()
 
 }
