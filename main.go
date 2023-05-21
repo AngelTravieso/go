@@ -1,10 +1,6 @@
 // Paquete principal
 package main
 
-import (
-	"github.com/AngelTravieso/go/arreglos_slices"
-)
-
 // Paque que implementa funciones I/O
 // Tiene la información del equipo donde se ejecuta el sistema
 // Importar paquete 'variables'
@@ -12,6 +8,9 @@ import (
 // Importar paquete 'ejercicios'
 // "github.com/AngelTravieso/go/ejercicios"
 // Importar paquete 'teclado'
+import (
+	"github.com/AngelTravieso/go/mapas"
+)
 
 // Punto de entrada del programa
 func main() {
@@ -64,6 +63,8 @@ func main() {
 
 	// arreglos_slices.MuestroArreglos()
 	// arreglos_slices.MuestroSlice()
-	arreglos_slices.Capacidad()
+	// arreglos_slices.Capacidad()
+
+	mapas.MostrarMapas()
 
 }
