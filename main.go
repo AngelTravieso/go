@@ -59,6 +59,7 @@ func main() {
 	// files.LeerArchivo()
 
 	// funciones.Calculos()
-	funciones.LlamarClosure()
+	// funciones.LlamarClosure()
+	funciones.Exponencial(2)
 
 }
