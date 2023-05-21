@@ -2,7 +2,7 @@
 package main
 
 import (
-	"github.com/AngelTravieso/go/funciones"
+	"github.com/AngelTravieso/go/arreglos_slices"
 )
 
 // Paque que implementa funciones I/O
@@ -60,6 +60,10 @@ func main() {
 
 	// funciones.Calculos()
 	// funciones.LlamarClosure()
-	funciones.Exponencial(2)
+	// funciones.Exponencial(2)
+
+	// arreglos_slices.MuestroArreglos()
+	// arreglos_slices.MuestroSlice()
+	arreglos_slices.Capacidad()
 
 }
