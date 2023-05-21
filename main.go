@@ -9,7 +9,7 @@ package main
 // "github.com/AngelTravieso/go/ejercicios"
 // Importar paquete 'teclado'
 import (
-	"github.com/AngelTravieso/go/mapas"
+	"github.com/AngelTravieso/go/users"
 )
 
 // Punto de entrada del programa
@@ -65,6 +65,8 @@ func main() {
 	// arreglos_slices.MuestroSlice()
 	// arreglos_slices.Capacidad()
 
-	mapas.MostrarMapas()
+	// mapas.MostrarMapas()
+
+	users.AltaUsuario()
 
 }
