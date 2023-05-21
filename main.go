@@ -9,7 +9,10 @@ package main
 // "github.com/AngelTravieso/go/ejercicios"
 // Importar paquete 'teclado'
 import (
-	"github.com/AngelTravieso/go/users"
+
+	// alias paquete
+	ejer "github.com/AngelTravieso/go/ejer_interfaces"
+	"github.com/AngelTravieso/go/modelos"
 )
 
 // Punto de entrada del programa
@@ -67,6 +70,12 @@ func main() {
 
 	// mapas.MostrarMapas()
 
-	users.AltaUsuario()
+	// users.AltaUsuario()
+
+	Pedro := new(modelos.Hombre)
+	ejer.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	ejer.HumanosRespirando(Maria)
 
 }
