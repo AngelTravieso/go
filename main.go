@@ -2,7 +2,7 @@
 package main
 
 import (
-	"github.com/AngelTravieso/go/files"
+	"github.com/AngelTravieso/go/funciones"
 )
 
 // Paque que implementa funciones I/O
@@ -56,6 +56,9 @@ func main() {
 
 	// files.GrabaTablaMultiplicar()
 	// files.SumaTabla()
-	files.LeerArchivo()
+	// files.LeerArchivo()
+
+	// funciones.Calculos()
+	funciones.LlamarClosure()
 
 }
