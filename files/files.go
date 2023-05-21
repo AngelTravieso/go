@@ -1,6 +1,7 @@
 package files
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 
@@ -59,5 +60,41 @@ func Append(filen string, texto string) bool {
 
 	arch.Close()
 	return true
+
+}
+
+// Con ioutil
+// func LeerArchivo() {
+// 	archivo, err := ioutil.ReadFile(fileName)
+
+// 	if err != nil {
+// 		fmt.Println("Error al leer archivo " + err.Error())
+// 		return
+// 	}
+
+// 	// archivo es un array de bytes, se hace un cast para imprimir el string
+// 	fmt.Println(string(archivo))
+
+// }
+
+// Con os
+func LeerArchivo() {
+	archivo, err := os.Open(fileName)
+
+	if err != nil {
+		fmt.Println("Error al leer archivo " + err.Error())
+		return
+	}
+
+	// Los datos estan en el archivo
+	scanner := bufio.NewScanner(archivo)
+
+	// Mientras pueda escanear
+	for scanner.Scan() {
+		registro := scanner.Text()
+		fmt.Println(">" + registro)
+	}
+
+	archivo.Close()
 
 }
