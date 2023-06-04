@@ -13,7 +13,10 @@ import (
 	// alias paquete
 	// ejer "github.com/AngelTravieso/go/ejer_interfaces"
 	// "github.com/AngelTravieso/go/modelos"
-	def "github.com/AngelTravieso/go/defer_panic"
+	// def "github.com/AngelTravieso/go/defer_panic"
+	"fmt"
+
+	routines "github.com/AngelTravieso/go/goroutines"
 )
 
 // Punto de entrada del programa
@@ -80,6 +83,15 @@ func main() {
 	// ejer.HumanosRespirando(Maria)
 
 	// def.VemosDefer()
-	def.EjemploPanic()
+	// def.EjemploPanic()
+
+	// routines.MiNombreLento("Angel Travieso")
+
+	// Ejecución asíncrona
+	go routines.MiNombreLento("Angel Travieso")
+
+	fmt.Println("Estoy aqui")
+	var x string
+	fmt.Scanln(&x)
 
 }
