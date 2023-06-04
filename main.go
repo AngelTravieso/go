@@ -11,8 +11,9 @@ package main
 import (
 
 	// alias paquete
-	ejer "github.com/AngelTravieso/go/ejer_interfaces"
-	"github.com/AngelTravieso/go/modelos"
+	// ejer "github.com/AngelTravieso/go/ejer_interfaces"
+	// "github.com/AngelTravieso/go/modelos"
+	def "github.com/AngelTravieso/go/defer_panic"
 )
 
 // Punto de entrada del programa
@@ -72,10 +73,13 @@ func main() {
 
 	// users.AltaUsuario()
 
-	Pedro := new(modelos.Hombre)
-	ejer.HumanosRespirando(Pedro)
+	// Pedro := new(modelos.Hombre)
+	// ejer.HumanosRespirando(Pedro)
 
-	Maria := new(modelos.Mujer)
-	ejer.HumanosRespirando(Maria)
+	// Maria := new(modelos.Mujer)
+	// ejer.HumanosRespirando(Maria)
+
+	// def.VemosDefer()
+	def.EjemploPanic()
 
 }
