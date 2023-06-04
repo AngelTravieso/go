@@ -8,15 +8,12 @@ package main
 // Importar paquete 'ejercicios'
 // "github.com/AngelTravieso/go/ejercicios"
 // Importar paquete 'teclado'
-import (
-
-	// alias paquete
+import ( // alias paquete
 	// ejer "github.com/AngelTravieso/go/ejer_interfaces"
 	// "github.com/AngelTravieso/go/modelos"
 	// def "github.com/AngelTravieso/go/defer_panic"
-	"fmt"
-
-	routines "github.com/AngelTravieso/go/goroutines"
+	// routines "github.com/AngelTravieso/go/goroutines"
+	web "github.com/AngelTravieso/go/webserver"
 )
 
 // Punto de entrada del programa
@@ -89,15 +86,17 @@ func main() {
 
 	// Ejecución asíncrona
 
-	canal1 := make(chan bool)
-	go routines.MiNombreLento("Angel Travieso", canal1)
-	// await en GO
-	defer func() {
-		<-canal1
-	}()
-	fmt.Println("Estoy aqui")
+	// canal1 := make(chan bool)
+	// go routines.MiNombreLento("Angel Travieso", canal1)
+	// // await en GO
+	// defer func() {
+	// 	<-canal1
+	// }()
+	// fmt.Println("Estoy aqui")
 
 	// var x string
 	// fmt.Scanln(&x)
+
+	web.MiWebServer()
 
 }
