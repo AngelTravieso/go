@@ -88,10 +88,16 @@ func main() {
 	// routines.MiNombreLento("Angel Travieso")
 
 	// Ejecución asíncrona
-	go routines.MiNombreLento("Angel Travieso")
 
+	canal1 := make(chan bool)
+	go routines.MiNombreLento("Angel Travieso", canal1)
+	// await en GO
+	defer func() {
+		<-canal1
+	}()
 	fmt.Println("Estoy aqui")
-	var x string
-	fmt.Scanln(&x)
+
+	// var x string
+	// fmt.Scanln(&x)
 
 }
