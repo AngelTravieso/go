@@ -13,7 +13,8 @@ import ( // alias paquete
 	// "github.com/AngelTravieso/go/modelos"
 	// def "github.com/AngelTravieso/go/defer_panic"
 	// routines "github.com/AngelTravieso/go/goroutines"
-	web "github.com/AngelTravieso/go/webserver"
+	// web "github.com/AngelTravieso/go/webserver"
+	"github.com/AngelTravieso/go/middlewares"
 )
 
 // Punto de entrada del programa
@@ -97,6 +98,8 @@ func main() {
 	// var x string
 	// fmt.Scanln(&x)
 
-	web.MiWebServer()
+	// web.MiWebServer()
+
+	middlewares.MiMiddleware()
 
 }
